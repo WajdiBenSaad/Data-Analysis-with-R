@@ -6,7 +6,8 @@ Below is the list of models and projects that will be shared in the repo:
 
 
 
-#### 1-Descriptive Stats and Visuals 
+#### [1-Descriptive Stats and Visuals](https://github.com/WajdiBenSaad/Data-Analysis-with-R/blob/master/R_Codes.Rmd)
+
 In this part, I will assemble the main functions and methods used to generate summary statistics.
 I will also try to join these summary statistics functions with all the visual graphs that make exploring any data set easy and fun.
 

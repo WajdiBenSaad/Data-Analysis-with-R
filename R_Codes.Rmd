@@ -1,0 +1,64 @@
+
+#### 1 - Descriptive Stats and Visuals 
+In this part, I will assemble the main functions and methods used to generate summary statistics.
+I will also try to join these summary statistics functions with all the visual graphs that make exploring any data set easy and fun.
+
+```{r  results=FALSE, include=TRUE, warning=FALSE,message=FALSE}
+########################################################################
+#            Loading Libraries
+########################################################################
+
+library(caTools)
+library(gridExtra)
+library(Hmisc) ## for the "describe" function
+library(pastecs) ## for the "stat.desc" function
+library(scales)  #3 for the "percent_scales" function
+
+```
+
+
+## Loading the Titanic Data set:
+
+This data is available and can be downloaded from Kaggle
+https://www.kaggle.com/c/titanic/data
+
+```{r}
+# We load the train and test libraries
+train<-read.csv(file.choose())
+# test<-read.csv(file.choose())
+
+# to make it easy to build some graphs, we change the type of the variable Survived (values = 1 and = 0)
+train$Survived<-as.factor(train$Survived)
+head(train)
+summary(train)
+describe(train)
+stat.desc(train)
+```
+#### Building Some Graphs 
+
+```{r}
+### ploting some graphs
+## We use the ggplot2 Library
+
+#ploting survivors per passer class
+
+g1 <- ggplot(train, aes(Pclass))
+g1 + geom_bar(stat = "count",aes(fill = Survived))+
+    ggtitle("Survivors By Passenger Class") 
+## Survivors by Gender
+g2 <- ggplot(train, aes(Sex))
+g2 + geom_bar(stat = "count",aes(fill = Survived))+
+    ggtitle("Survivors By Passenger Gender")
+
+##Survivors By Port of Embarkment
+g3 <- ggplot(train, aes(Embarked))
+g3 + geom_bar(stat="count",aes(fill = factor(Survived)))+
+    scale_y_continuous(labels = percent_format())+
+    ggtitle("Survivors By Port of Embarkment")
+
+```
+
+
+### comments to be added to each section
+
+

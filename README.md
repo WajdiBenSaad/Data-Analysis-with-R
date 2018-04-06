@@ -16,8 +16,10 @@ Since it is the first regression model that anyone is going to come across, I wi
 
 #### 3-Logistic Regression
 In this part, I will explain the logistic regression model and just like I did with the Linear regresison, I will walk the user through all its steps.
+
 #### 3-Polynomial Regression
 In this part, I will explore the polynomial regression and details how this model is built.
+
 #### 4-LASSO Regression
 In this part, I will work on the LASSO regression with a specific data set.
 

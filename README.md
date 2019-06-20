@@ -1,4 +1,6 @@
 # Data Analysis with R
+ [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://GitHub.com/Naereen/StrapDown.js/graphs/commit-activity) [![Ask Me Anything !](https://img.shields.io/badge/Ask%20me-anything-1abc9c.svg)](https://GitHub.com/Naereen/ama)  [![Open Source Love png1](https://badges.frapsoft.com/os/v1/open-source.png?v=103)](https://github.com/ellerbrock/open-source-badges/)
+
 In this repo, I will put some stuff I play with. Also I will add some usuful tutorials that anyone can use to model, plot and analyze any kind of data, So **Enjoy** it and let me know if there are something that needs to be corrected or enhanced!
 
 
